@@ -10,9 +10,9 @@ class TicketsController < ApplicationController
 	end	
 
 	def GetNoOfSeven		
-	    amt = params[:ticket][:cuantos].to_i
+	    amt = params[:ticket][:cuantos].to_i.round
         if (amt > 9) then                        
-            return amt / 9
+            return (amt / 9).round
         end
         return amt / 7
 	end

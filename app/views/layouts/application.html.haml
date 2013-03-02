@@ -1,0 +1,20 @@
+!!! 5
+%html
+  %head
+    %title Calcula Cuantos Tickets!
+    = stylesheet_link_tag 'application'
+
+  %body
+    %h1 Cuantos Tickets de cada?
+
+    .user_form
+      %span
+        = form_tag tickets_path do
+
+          = label :ticket, :cuantos, 'Cantidad'
+          = text_field :ticket, 'cuantos'
+
+          = submit_tag 'Cuantos?'
+
+          = yield
+

@@ -1,0 +1,16 @@
+%h1 Cuantos Tickets
+
+= form_tag tickets_path do
+
+  = label :ticket, :cuantos, 'Cuantos'
+  = text_field :ticket, 'cuantos'
+
+  = submit_tag 'Cuantos?'
+
+%ul#tickets
+  %li
+    De 7:
+    = @deSiete
+  %li
+    De 2:
+    = @deDos

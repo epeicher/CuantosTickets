@@ -3,6 +3,9 @@
   %br
   %label= "#{@deDos} de 2"
   %br
-  %label= "The amount was: #{@amtf}"
+  %label= "Suman: #{@totalTickets}"
   %br
-  %label{:class => (if (!@diff.nil? and @diff < 0) then "negative" else "possitive" end)}= "And the difference is: #{@difference}"
+  -if (@difference < 0) then
+    %label.negative= "Te sobran: #{@difference}"
+  -elsif(@difference > 0) then
+    %label.possitive= "Tienes que poner: #{@difference}"

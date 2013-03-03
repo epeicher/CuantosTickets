@@ -54,8 +54,16 @@ h1 {
 	text-align: center;
 }
 label.possitive {
-  color: black;
+  color: blue;
 }
 label.negative {
   color: red;
+}
+label.exact {
+  color: green;
+}
+
+input {
+  height: 35px;
+  font-size: 2em;
 }

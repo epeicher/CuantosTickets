@@ -5,7 +5,8 @@ class TicketsController < ApplicationController
 		@amt = @amtf.round(0).to_i
 		@deDos = GetNoOfTwo()
 		@deSiete = GetNoOfSeven()
-		@difference = (@amtf - (@deDos*2) - (@deSiete*7)).round(2)
+		@totalTickets = (@deDos*2) + (@deSiete*7)
+		@difference = (@amtf - @totalTickets).round(2)
 	end
 
 	def index

@@ -1,15 +1,11 @@
 class TicketsController < ApplicationController
 
 	def create
-		@amtf = params[:ticket][:cuantos].to_f
+		@amtf = params[:ticket][:cuantos].to_f 
 		@amt = @amtf.round(0).to_i
 		@deDos = GetNoOfTwo()
 		@deSiete = GetNoOfSeven()
-	end
-
-	def Cuantos
-		create
-		render 'create'
+		@difference = (@amtf - (@deDos*2) - (@deSiete*7)).round(2)
 	end
 
 	def index

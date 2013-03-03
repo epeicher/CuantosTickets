@@ -53,3 +53,9 @@ label {
 h1 {
 	text-align: center;
 }
+label.possitive {
+  color: black;
+}
+label.negative {
+  color: red;
+}

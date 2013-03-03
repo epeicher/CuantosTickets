@@ -2,3 +2,7 @@
   %label= "#{@deSiete} de 7"
   %br
   %label= "#{@deDos} de 2"
+  %br
+  %label= "The amount was: #{@amtf}"
+  %br
+  %label{:class => (if (!@diff.nil? and @diff < 0) then "negative" else "possitive" end)}= "And the difference is: #{@difference}"

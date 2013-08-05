@@ -2,18 +2,19 @@
 %html
   %head
     %title ¡Calcula Cuantos Tickets!
-    = stylesheet_link_tag 'application'
+    
     = stylesheet_link_tag 'bootstrap.min'
+    = stylesheet_link_tag 'signin'
 
   %body
-    %h1 ¿Cuantos Tickets de cada?
+    .container      
+        
+      = form_tag tickets_path, class: 'form-signin' do
+	  
+        %h2.form-signin-heading ¿Cuantos Tickets de cada?
 
-    .user_form
-      %span
-        = form_tag tickets_path do
+        = number_field :ticket, 'cuantos', :step => 0.01, :value => @amtf, :id => "input", class: 'input-block-level'
 
-          = number_field :ticket, 'cuantos', :step => 0.01, :value => @amtf, :id => "input"
+        = button_tag "¿Cuantos?", class: 'btn btn-large btn-primary btn-block'
 
-          = button_tag "Cuantos?", class: 'btn btn-large btn-primary btn-block'
-
-          = yield
+        = yield

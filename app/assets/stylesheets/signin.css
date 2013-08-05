@@ -42,6 +42,5 @@ label {
 }
 
 label.negative {
-  font-size: 6em;
   color: red;
 }

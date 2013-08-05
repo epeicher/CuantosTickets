@@ -26,3 +26,22 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
+.tickets {
+  border-style: dashed;
+  border-width: 0px;
+  border-color: rgb(66, 139, 202);
+}
+
+label {
+  font-size: 2em;
+}
+
+.possitive {
+  color: blue;
+}
+
+label.negative {
+  font-size: 6em;
+  color: red;
+}

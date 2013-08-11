@@ -1,33 +1,26 @@
-.form-signin {
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
-}
-.form-signin .form-signin-heading {
-  margin-bottom: 10px;
-  text-align: center;
+html {
+    background: url(IMG-20130805-WA0001.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.form-signin input[type="number"]{
-  width: 100%;
-  position: relative;
-  font-size: 16px;
-  height: auto;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+body {
+    padding-top: 20px;
+    background: transparent;
 }
-.form-signin input[type="number"]:focus {
-  z-index: 2;
+.margin-base-vertical {
+    margin: 40px 0;
 }
-.form-signin input[type="number"] {
-  margin-bottom: -1px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+
+.panel {
+    background-color: rgba(255, 255, 255, 0.9);
 }
+
 
 .tickets {
+  text-align: center;
   border-style: dashed;
   border-width: 0px;
   border-color: rgb(66, 139, 202);

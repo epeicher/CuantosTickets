@@ -24,6 +24,7 @@ body {
   border-style: dashed;
   border-width: 0px;
   border-color: rgb(66, 139, 202);
+  text-align: center;
 }
 
 label {
